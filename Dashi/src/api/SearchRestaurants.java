@@ -45,9 +45,9 @@ public class SearchRestaurants extends HttpServlet {
 	private static final Logger LOGGER = Logger.getLogger(SearchRestaurants.class.getName());
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        JSONArray array = new JSONArray();
-        if (request.getParameterMap().containsKey("lat")
-        	&& request.getParameterMap().containsKey("lon")) {
+               JSONArray array = new JSONArray();
+               if (request.getParameterMap().containsKey("lat")
+        	      && request.getParameterMap().containsKey("lon")) {
         	// term is null or empty by default
         	String term = request.getParameter("term");
         	//String userId = (String) session.getAttribute("user");
